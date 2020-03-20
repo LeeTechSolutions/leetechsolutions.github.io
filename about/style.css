@@ -1,0 +1,33 @@
+#jamesinfo {
+	background-color: white;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	height: 68vh;
+	width: 85vw;
+	margin-top: 30vh;
+}
+#jamesinfo h2 {
+	font-family: 'Zilla Slab', serif;
+	font-weight: 1;
+	font-size: 60px;
+	color: #ffb077;
+	padding-top: 20px;
+	padding-left: 30px;
+}
+#jamesinfo ul {
+	padding-left: 65px;
+	padding-top: 10px;
+	font-family: 'Source Sans Pro', sans-serif;
+	color: #B0E0E6;
+	font-size: 27px;
+}
+section {
+	flex-direction: column;
+	justify-content: flex-start;
+	height: 180vh;
+}
+section h1 {
+	width: 80vw;
+	margin-top: 25vh;
+}
