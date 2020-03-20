@@ -68,6 +68,12 @@ function raiseHeader() {
 		}, {
 			duration: 100,
 		});
+		/*$("#logo").velocity({
+			height: "81.196875",
+			width: "54.061875",
+		}, {
+			duration: 100,
+		});*/
 }
 function lowerHeader(){
 		toggled = toggled - 1;
@@ -92,4 +98,10 @@ function lowerHeader(){
 		}, {
 			duration: 100,
 		});
+		/*$("#logo").velocity({
+			height: "81.196875",
+			width: "54.061875",
+		}, {
+			duration: 100,
+		});*/
 }

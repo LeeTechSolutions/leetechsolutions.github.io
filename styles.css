@@ -10,7 +10,6 @@ h1 {
 	font-weight: 1;
 	font-size: 60px;
 	color: #ffb077;
-	padding-top: 20px;
 }
 a {
 	text-decoration: none;
@@ -29,6 +28,7 @@ nav {
 	flex-direction: row;
 	width: 100vw;
 	z-index: 1000;
+	align-items: center;
 }
 #bar {
 	background-color: #ffb077;
@@ -38,11 +38,11 @@ nav {
 	flex-direction: row-reverse;
 	justify-content: space-evenly;
 	right: 0px;
-	width: 100vw;
 	color: #ffb077;
 	font-family: 'Source Sans Pro', sans-serif;
 	align-items: center;
 	font-size: 25px;
+	width: 40vw;
 }
 #header-right a {
 	color: #ffb077;
@@ -53,6 +53,10 @@ nav {
 }
 #header-left {
 	padding-left: 20px;
+	width: 60vw;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
 }
 body {
 	background-color: #f3ebe1;
@@ -92,4 +96,7 @@ section {
 	font-family: 'Source Sans Pro', sans-serif;
 	color: #B0E0E6;
 	font-size: 27px;
+}
+svg {
+	padding-left: 20px;
 }
