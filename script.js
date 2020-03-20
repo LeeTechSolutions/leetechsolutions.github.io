@@ -1,6 +1,9 @@
 headerup = false;
 toggled = 0;
+temp = 0;
+opacityval = 1;
 window.addEventListener('scroll', function(e){
+
 	console.log(headerup);
 	if (window.scrollY > 50 && toggled == 0){
 		headerup = true;
@@ -14,11 +17,17 @@ window.addEventListener('scroll', function(e){
 	if (headerup === false && toggled == 1){
 		lowerHeader();
 	}
-
+	opacityval = opacityval + (temp - window.scrollY)/75;
+	console.log(opacityval);
+	$("#code").velocity({
+		opacity: opacityval,
+	}, {
+		duration: 1,
+	});
+	temp = window.scrollY;
 });
 function raiseHeader() {
 		toggled = toggled + 1;
-		console.log("bitch");
 		$("#header").velocity({
 			height: "100px",
 		}, {
@@ -35,10 +44,14 @@ function raiseHeader() {
 		}, {
 			duration: 200,
 		});
+		$("#header-right").velocity({
+			fontSize: "17px",
+		}, {
+			duration: 200,
+		});
 }
 function lowerHeader(){
 		toggled = toggled - 1;
-		console.log("shit");
 		$("#header").velocity({
 			height: "150px",
 		}, {
@@ -52,6 +65,11 @@ function lowerHeader(){
 		$("#bar").velocity({
 			width: "700px",
 			height: "1vh",
+		}, {
+			duration: 200,
+		});
+		$("#header-right").velocity({
+			fontSize: "25px",
 		}, {
 			duration: 200,
 		});

@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Zilla+Slab&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Playfair+Display&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap');
 * {
 	margin: 0;
 	padding: 0;
@@ -9,7 +10,6 @@ h1 {
 	font-weight: 1;
 	font-size: 60px;
 	color: #ffb077;
-	width: 100vw;
 	padding-top: 20px;
 }
 h1:hover {
@@ -19,18 +19,70 @@ nav {
 	background-color: white;
 	height: 150px;
 	position: fixed;
+	display: flex;
+	flex-direction: row;
+	width: 100vw;
+	z-index: 1000;
 }
 #bar {
 	background-color: #ffb077;
+}
+#header-right {
+	display: flex;
+	flex-direction: row-reverse;
+	justify-content: space-evenly;
+	right: 0px;
+	width: 100vw;
+	color: #ffb077;
+	font-family: 'Source Sans Pro', sans-serif;
+	align-items: center;
+	font-size: 25px;
+}
+#header-right a {
+	color: #ffb077;
+	text-decoration: none;
+}
+#header-right a:hover {
+	color: #B0E0E6;
+}
+#header-left {
+	padding-left: 20px;
 }
 body {
 	background-color: #f3ebe1;
 	height: 300vh;
 }
-img {
-	padding-top: 20px;
-	padding-left: 20px;
+section {
+	height: 130vh;
+	align-items: center;
+	display: flex;
+	justify-content: space-evenly;
 }
-#header-content {
-	padding-left: 45px;
+#white {
+	background-color: white;
+	position: relative;
+	height: 68vh;
+	width: 85vw;
+}
+#white img {
+	top: 0;
+	width: 85vw;
+	height: 68vh;
+	position: relative;
+	z-index: 50;
+}
+#white h1 {
+	z-index: 25;
+	top: 20px;
+	left: 30px;
+	position: absolute;
+}
+#white ul{
+	z-index: 25;
+	top: 130px;
+	left: 65px;
+	position: absolute;
+	font-family: 'Source Sans Pro', sans-serif;
+	color: #B0E0E6;
+	font-size: 27px;
 }
