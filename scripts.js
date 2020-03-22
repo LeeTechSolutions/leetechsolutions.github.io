@@ -19,7 +19,6 @@ window.addEventListener('scroll', function(e){
 		set = true;
 		$(".home").css({
 			position: "fixed",
-			backgroundColor: "white",
 			top: "-80px",
 		}).velocity({
 			translateY: '5px',

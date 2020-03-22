@@ -8,14 +8,19 @@ body {
 	flex-direction: row;
 	padding: 0vw 2.5vw 0 2.5vw;
 	height: 75px;
+	z-index: 1000;
+	position: relative;
 }
-.home::after {
+
+/*.topbar-wrapper::after {
     content: "";
     width: 100%;
     height: 5px;
     display: block;
     background: black;
-}
+    position: relative;
+    z-index: 1000;
+}*/
 .nav-left {
 	display: flex;
 	flex-direction: row;
@@ -43,20 +48,30 @@ body {
     width: 100%;
     height: 6px;
     display: block;
-    background: #2f3344;
+    background: black;
 }
 .footer {
 	margin: 10vh 10vh 0vh 10vh;
 }
+.landing-wrapper {
+	background-image: url('monetbaby.jpg');
+	position: fixed;
+  	height: 100vh;
+  	width: 100vw;
+  	background-attachment: fixed;
+ 	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	margin-top: -85px;
+}
 .landing {
-	/*background-image: url(https://www.elsetge.cat/myimg/f/188-1885985_oak-tree-high-definition.jpg);*/
 	height: 80vh;
 	margin: 0vw 0vh 0 8vw;
 	padding: 0;
 	position: fixed;
 }
 .landing h1 {
-	padding: 5vh 5vh 0 5vh;
+	padding: 15vh 5vh 0 5vh;
 	font-size: 120px;
 	margin: 0;
 }
@@ -66,7 +81,7 @@ body {
 	height: 100vh;
 	margin-top: 85vh;
 	padding: 0;
-	background-color: green;
+	background-color: #2ace82;
 }
 .forest h1 {
 	font-size: 80px;
@@ -83,7 +98,7 @@ body {
 	height: 100vh;
 	margin-top: -12vh;
 	padding: 0;
-	background-color: red;
+	background-color: #32e7c8;
 }
 .fire h1 {
 	font-size: 80px;
@@ -100,7 +115,7 @@ body {
 	height: 100vh;
 	margin-top: -1vh;
 	padding: 0;
-	background-color: yellow;
+	background-color: #f9c629;
 }
 .sun h1 {
 	font-size: 80px;
@@ -117,7 +132,7 @@ body {
 	height: 100vh;
 	margin-top: -1vh;
 	padding: 0;
-	background-color: blue;
+	background-color: #f29d46;
 }
 .water h1 {
 	font-size: 80px;
@@ -135,6 +150,23 @@ body {
 	font-size: 20px;
 }
 img {
-	height: 100px;
-	width: 110px;
+	height: 120.5px;
+	width: 132px;
+}
+.whylink:hover {
+	color: #2ace82;
+}
+.wholink:hover {
+	color: #32e7c8;
+}
+.whatlink:hover {
+	color: #f9c629;
+}
+a {
+	text-decoration: none;
+	color: black;
+}
+.footer {
+	position: relative;
+	z-index: 1000;
 }
