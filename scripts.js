@@ -3,6 +3,8 @@ temp = 0;
 headerdown = false;
 runs = 0;
 set = false;
+backgroundposx = 50;
+backgroundposy = 50;
 window.addEventListener('scroll', function(e){
 
 	//effect of the bait text
@@ -35,6 +37,17 @@ window.addEventListener('scroll', function(e){
 	console.log(temp);
 	if (!(goingUp()) && window.scrollY > 100 && headerdown){
 		raiseWindow();
+	}
+	//background animation
+	if (!(goingUp())){
+		backgroundposy = backgroundposy + 0.4;
+		backgroundposx = backgroundposx + 0.3;
+		$('.landing-wrapper').css('background-position', (backgroundposx + "%" + backgroundposy + "%"));
+	}
+	if ((goingUp())){
+		backgroundposy = backgroundposy - 0.4;
+		backgroundposx = backgroundposx - 0.3;
+		$('.landing-wrapper').css('background-position', (backgroundposx + "%" + backgroundposy + "%"));
 	}
 	console.log(window.scrollY);
 	console.log(goingUp());
