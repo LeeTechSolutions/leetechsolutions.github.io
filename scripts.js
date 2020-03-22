@@ -42,6 +42,8 @@ window.addEventListener('scroll', function(e){
 	temp = window.scrollY;
 });
 
+//make something so that when links are highlighted, it does some crazy rainbow higlight pazass
+
 function makeOpaque(name){
 	$(name).velocity({
 			opacity: 0,

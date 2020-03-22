@@ -68,6 +68,15 @@ body {
 	padding: 0;
 	background-color: green;
 }
+.forest h1 {
+	font-size: 80px;
+	transform: rotate(5deg);
+	margin: 90px 0px 0px 300px;
+}
+.forest p {
+	transform: rotate(5deg);
+	margin: 90px 0px 0px 300px;
+}
 .fire {
 	clip-path: polygon(0% 20%, 78% 0%, 93% 78%, 0% 100%);
 	width: 100vw;
@@ -75,6 +84,15 @@ body {
 	margin-top: -12vh;
 	padding: 0;
 	background-color: red;
+}
+.fire h1 {
+	font-size: 80px;
+	transform: rotate(-5deg);
+	margin: 90px 0px 0px 300px;
+}
+.fire p {
+	transform: rotate(-5deg);
+	margin: 90px 0px 0px 300px;
 }
 .sun {
 	clip-path: polygon(17% 0, 100% 8%, 93% 78%, 0% 100%);
@@ -84,6 +102,15 @@ body {
 	padding: 0;
 	background-color: yellow;
 }
+.sun h1 {
+	font-size: 80px;
+	transform: rotate(5deg);
+	margin: 90px 0px 0px 380px;
+}
+.sun p {
+	transform: rotate(5deg);
+	margin: 90px 120px 0px 300px;
+}
 .water {
 	clip-path: polygon(13% 3%, 100% 0%, 93% 78%, 5% 100%);
 	width: 100vw;
@@ -92,6 +119,22 @@ body {
 	padding: 0;
 	background-color: blue;
 }
+.water h1 {
+	font-size: 80px;
+	transform: rotate(-3deg);
+	margin: 90px 0px 0px 300px;
+}
+.water p {
+	transform: rotate(-3deg);
+	margin: 90px 0px 0px 300px;
+}
 .home {
 	z-index: 1000;
+}
+.colorcontent p {
+	font-size: 20px;
+}
+img {
+	height: 100px;
+	width: 110px;
 }
