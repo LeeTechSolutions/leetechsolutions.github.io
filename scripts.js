@@ -40,13 +40,13 @@ window.addEventListener('scroll', function(e){
 	}
 	//background animation
 	if (!(goingUp())){
-		backgroundposy = backgroundposy + 0.4;
-		backgroundposx = backgroundposx + 0.3;
+		backgroundposy = backgroundposy + (window.scrollY - temp)/100;
+		backgroundposx = backgroundposx + (window.scrollY - temp)/70;
 		$('.landing-wrapper').css('background-position', (backgroundposx + "%" + backgroundposy + "%"));
 	}
 	if ((goingUp())){
-		backgroundposy = backgroundposy - 0.4;
-		backgroundposx = backgroundposx - 0.3;
+		backgroundposy = backgroundposy - (temp - window.scrollY)/100;
+		backgroundposx = backgroundposx - (temp - window.scrollY)/70;
 		$('.landing-wrapper').css('background-position', (backgroundposx + "%" + backgroundposy + "%"));
 	}
 	console.log(window.scrollY);
